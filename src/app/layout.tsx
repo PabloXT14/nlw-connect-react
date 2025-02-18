@@ -1,11 +1,24 @@
 import '@/app/global.css'
 
 import type { Metadata } from 'next'
+import { Montserrat, Oxanium } from 'next/font/google'
 
 export const metadata: Metadata = {
-  title: 'CodeCraft',
+  title: 'DevStage',
   description: 'Pagina de inscrição no evento e acompanhamento de indicações',
 }
+
+const oxanim = Oxanium({
+  subsets: ['latin'],
+  weight: ['500', '600'],
+  variable: '--font-oxanium',
+})
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['400', '600'],
+  variable: '--font-montserrat',
+})
 
 export default function RootLayout({
   children,
@@ -13,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${oxanim.variable} ${montserrat.variable}`}>
       <body className="bg-zinc-950 text-zinc-100">{children}</body>
     </html>
   )
