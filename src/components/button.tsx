@@ -1,8 +1,6 @@
 import type { ComponentProps } from 'react'
 
-type ButtonProps = ComponentProps<'button'> & {
-  text?: string
-}
+type ButtonProps = ComponentProps<'button'>
 
 export function Button({ className, ...props }: ButtonProps) {
   return (
