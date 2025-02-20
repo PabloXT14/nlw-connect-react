@@ -10,8 +10,7 @@ function Input({ className, error, ...props }: InputProps) {
     <div
       data-error={!!error}
       className={twMerge(
-        'group w-full flex items-center gap-2 bg-gray-800 px-4 h-12 rounded-xl border border-gray-600  focus-within:border-gray-100',
-        '[&:not(:has(input:placeholder-shown))]:text-gray-100',
+        'group w-full flex items-center gap-2 bg-gray-800 px-4 h-12 rounded-xl border border-gray-600 focus-within:border-gray-100',
         'data-[error=true]:border-danger',
         className
       )}

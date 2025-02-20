@@ -16,7 +16,9 @@ export default function Home() {
       </IconButton>
 
       <Input>
-        <User size={20} />
+        <InputIcon>
+          <User size={20} />
+        </InputIcon>
         <InputField type="text" placeholder="Nome" />
       </Input>
 
