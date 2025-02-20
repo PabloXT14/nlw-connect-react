@@ -21,20 +21,15 @@
     "enabled": true,
     "rules": {
       "recommended": true,
-      "style": {
-        "noNonNullAssertion": "off"
+      "a11y": {
+        "noSvgWithoutTitle": "off"
       },
-      "complexity": {
-        "noUselessCatch": "off"
-      },
-      "correctness": {
-        "useExhaustiveDependencies": "off"
+      "suspicious": {
+        "noArrayIndexKey": "info"
       }
     }
   },
   "files": {
-    "ignore": [
-      "node_modules"
-    ]
+    "ignore": ["node_modules"]
   }
 }
