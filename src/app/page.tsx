@@ -47,9 +47,12 @@ export default function Home() {
               criar soluções inovadoras e compartilhar conhecimento. Vamos
               mergulhar nas tendências mais recentes em desenvolvimento de
               software, arquitetura de sistemas e tecnologias emergentes, com
-              palestras, workshops e hackathons.
-              <br />
-              <br />
+              palestras, workshops e hackathons. Dias 15 a 17 de março | Das 18h
+              às 21h | Online & Gratuito{' '}
+            </p>
+
+            {/* SCHEDULE */}
+            <p className="mt-auto text-gray-300 leading-relaxed text-sm md:text-base">
               Dias 15 a 17 de março | Das 18h às 21h | Online & Gratuito{' '}
             </p>
           </div>
