@@ -1,10 +1,10 @@
 import { ArrowRight, Mail, Radio, User } from 'lucide-react'
 import Image from 'next/image'
 
+import { Button } from '@/components/button'
 import { Input, InputField, InputIcon } from '@/components/input'
 
 import logo from '@/assets/logo.svg'
-import { Button } from '@/components/button'
 
 export default function Home() {
   return (
