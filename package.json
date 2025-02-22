@@ -11,16 +11,19 @@
     "link:fix": "npx @biomejs/biome lint --write ./src"
   },
   "dependencies": {
+    "@hookform/resolvers": "^4.1.1",
     "@tailwindcss/postcss": "^4.0.6",
     "lucide-react": "^0.475.0",
     "next": "15.1.7",
     "postcss": "^8.5.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-hook-form": "^7.54.2",
     "sonner": "^2.0.1",
     "tailwind-merge": "^3.0.1",
     "tailwind-variants": "^0.3.1",
-    "tailwindcss": "^4.0.6"
+    "tailwindcss": "^4.0.6",
+    "zod": "^3.24.2"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
