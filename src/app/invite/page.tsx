@@ -7,6 +7,8 @@ import { Stats } from '@/components/pages/invite/stats'
 import logo from '@/assets/logo.svg'
 
 export default function InvitePage() {
+  const inviteLink = 'devstage.com/codecraft-summit-2025/1289'
+
   return (
     <main className="max-w-[1240px] mx-auto px-5 py-8 lg:py-0">
       {/* INFO */}
@@ -47,7 +49,7 @@ export default function InvitePage() {
               </p>
             </div>
 
-            <InviteLinkInput />
+            <InviteLinkInput inviteLink={inviteLink} />
 
             <Stats />
           </div>
