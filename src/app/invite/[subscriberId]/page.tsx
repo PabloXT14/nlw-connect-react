@@ -6,8 +6,18 @@ import { Stats } from '@/components/pages/invite/stats'
 
 import logo from '@/assets/logo.svg'
 
-export default function InvitePage() {
-  const inviteLink = 'devstage.com/codecraft-summit-2025/1289'
+type InvitePageProps = {
+  params: Promise<{
+    subscriberId: string
+  }>
+}
+
+export default async function InvitePage({ params }: InvitePageProps) {
+  const { subscriberId } = await params
+
+  const inviteLink = `http://localhost:3333/invites/${subscriberId}`
+
+  console.log('SUBSCRIBER ID: ', subscriberId)
 
   return (
     <main className="max-w-[1240px] mx-auto px-5 py-8 lg:py-0">
